@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+
+<!DOCTYPE overlay SYSTEM
+    "chrome://icing/locale/domains.dtd">
+
+<dialog id="icing-domain-edit"
+    title="&icing.domains.editTitle;"
+    buttons="accept"
+    onload="Icing.DomainEntry.initialize();"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript"
+        src="chrome://icing/content/domainEntry.js" />
+
+    <vbox>
+
+        <label value="Domain" control="icing-domain" />
+        <textbox id="icing-domain" size="32" />
+
+        <label value="Server" control="icing-server" />
+        <textbox id="icing-server" size="32" />
+
+        <label value="Username" control="icing-username" />
+        <textbox id="icing-username" size="32" />
+
+        <label value="Password" control="icing-password" />
+        <textbox id="icing-password" size="32" type="password" />
+
+    </vbox>
+
+</dialog>

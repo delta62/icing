@@ -1,0 +1,7 @@
+content  icing             content/
+skin     icing classic/1.0 skin/
+locale   icing en-US       locale/en-US/
+resource icing             modules/
+
+overlay chrome://browser/content/browser.xul chrome://icing/content/browserOverlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://icing/skin/browserOverlay.css

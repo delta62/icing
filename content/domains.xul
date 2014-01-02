@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+
+<!DOCTYPE overlay SYSTEM
+    "chrome://icing/locale/domains.dtd">
+
+<dialog id="icing-domain-dialog"
+    title="&icing.domains.title;"
+    onload="Icing.Domains.initialize()"
+    buttons="accept"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript"
+        src="chrome://icing/content/domains.js" />
+
+    <script type="application/x-javascript"
+        src="chrome://icing/content/domainEntry.js" />
+
+    <vbox>
+
+        <listbox id="icing-domain-listbox" rows="10" width="240">
+            <listhead>
+                <listheader label="Domain" width="100" />
+                <listheader label="Server" width="120" />
+            </listhead>
+            <listcols>
+                <listcol />
+                <listcol flex="1" />
+            </listcols>
+        </listbox>
+
+        <hbox>
+
+            <button id="icing-domain-add" label="New" flex="1" />
+            <button id="icing-domain-edit" label="Edit" flex="1"
+                disabled="true" />
+            <button id="icing-domain-remove" label="Delete" flex="1"
+                disabled="true" />
+
+        </hbox>
+
+    </vbox>
+
+</dialog>

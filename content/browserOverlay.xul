@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+    href="chrome://icing/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://icing/locale/browserOverlay.dtd">
+
+<overlay id="icing-browser-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript"
+        src="chrome://icing/content/browserOverlay.js" />
+    <script type="application/x-javascript"
+        src="chrome://icing/content/domains.js" />
+
+     <toolbarpalette id="BrowserToolbarPalette">
+        <toolbarbutton id="icing-sync-button"
+            class="toolbarbutton-1 chromeclass-toolbar-additional"
+            label="&icing.toolbarbutton.label;"
+            tooltiptext="&icing.toolbarbutton.tooltip;"
+            oncommand="Icing.Domains.showDialog(event);" />
+
+    </toolbarpalette> 
+
+</overlay>
